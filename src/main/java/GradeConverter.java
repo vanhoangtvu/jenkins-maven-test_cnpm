@@ -23,7 +23,7 @@ public class GradeConverter {
         } else if (score >= MIN_E_SCORE) {
             return "E";
         } else {
-            return "Invalid"
+            return "Invalid"; 
         }
 
 
