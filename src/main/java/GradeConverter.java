@@ -1,21 +1,26 @@
 
 public class GradeConverter {
-    public String convert(int score)
-    {
-        if(score <= 100 && score > 90) {
+    private static final int MAX_SCORE = 100;
+    private static final int MIN_SCORE = 0;
+    private static final int MIN_A_SCORE = 90;
+    private static final int MIN_B_SCORE = 80;
+    private static final int MIN_C_SCORE = 70;
+    private static final int MIN_D_SCORE = 60;
+    private static final int MIN_E_SCORE = 50;
+
+    public String convert(int score){
+        if (score <= MAX_SCORE && score > MIN_A_SCORE) {
             return "A";
-        } else if(score <= 89 && score >= 80) {
+        } else if (score >= MIN_B_SCORE) {
             return "B";
-        } else if(score <= 79 && score >= 70){
+        } else if (score >= MIN_C_SCORE) {
             return "C";
-        } else if(score <= 69 && score >= 60) {
+        } else if (score >= MIN_D_SCORE) {
             return "D";
-        } else if(score <= 59 && score > 0) {
+        } else if (score >= MIN_E_SCORE) {
             return "E";
         } else {
             return "Invalid";
         }
     }
-
-
 }
