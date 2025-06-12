@@ -9,7 +9,7 @@ public class GradeConverter {
     private static final int MIN_E_SCORE = 50;
 
     public String convert(int score) {
-        if (score > MAX_SCORE || score < MIN_SCORE) {
+        if ((score > MAX_SCORE) || (score < MIN_SCORE)) {
             return "Invalid";
         }
         else if (score >= MIN_A_SCORE) {
@@ -22,7 +22,10 @@ public class GradeConverter {
             return "D";
         } else if (score >= MIN_E_SCORE) {
             return "E";
+        } else {
+            return "Invalid"
         }
-        
+
+
     }
 }
