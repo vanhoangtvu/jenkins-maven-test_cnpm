@@ -1,6 +1,3 @@
-
-package your.package.name;
-
 /**
  * Provides grade conversion functionality.
  */
