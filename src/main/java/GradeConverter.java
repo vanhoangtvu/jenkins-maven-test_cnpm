@@ -1,7 +1,6 @@
 public class GradeConverter {
     public String convert(int score)
     {
-        
         if(score <= 100 && score >= 90) {
             return "A";
         } else if(score <= 89 && score >= 80) {
