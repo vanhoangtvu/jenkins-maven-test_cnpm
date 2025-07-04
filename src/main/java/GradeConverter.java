@@ -8,7 +8,7 @@ public class GradeConverter {
             return "C";
         } else if(score <= 69 && score > 60) {
             return "D";
-        } else if (score >= MIN_E_SCORE) {
+        } else if (score >= 0) {
             return "E";
         } else {
             return "Invalid"; 
